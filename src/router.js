@@ -4,6 +4,7 @@ import EditUser from './views/auth/EditUser.vue'
 import ListUser from './views/auth/ListUser.vue'
 import LoginUser from './views/auth/LoginUser.vue'
 import RegisterUser from './views/auth/Registeruser.vue'
+const linkAccess = '/test';
 
 const routes = [
     { path: '/', component: Dashboard },
@@ -13,7 +14,7 @@ const routes = [
     { path: '/list', component: ListUser },
 ]
 const router = createRouter({
-    routes,
-    history: createWebHistory()
+    history: createWebHistory(linkAccess),
+    routes
 })
 export default router;

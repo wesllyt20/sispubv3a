@@ -2,56 +2,86 @@
   <div class="dashboard">
     <header class="header">Header</header>
     <div class="content">
-      <div class="sidebar">Panel</div>
-      <div class="row">
-        <div class="col-3">Widget 1</div>
-        <div class="col-6">Widget 2</div>
-        <div class="col-3">Widget 3</div>
+      <div class="publicacionPanel">Panel</div>
+      <div class="contentWidget">
+
+        <div class="row rowTop">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Parámetros Sísmicos</h5>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row rowTop mt-2">
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Parámetros Sísmicos</h5>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    
+
+
     </div>
   </div>
 </template>
+<script>
+export default {
 
-<style>
-.dashboard {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+  mounted() {
+    console.log("->", import.meta.env.VITE_PUBLIC_PATH)
 
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  }
 }
+</script>
 
-.content {
-  flex: 1;
-  display: flex;
-}
-
-.sidebar {
-  background-color: #eee;
-  width: 200px;
-  padding: 10px;
-}
-
-.center {
-  flex: 2.5;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.widget {
-  flex: 1;
-  background-color: #f0f0f0;
-  margin: 5px;
-  padding: 10px;
-}
-
-.bottom {
-  display: flex;
-  flex-wrap: wrap;
-}
-</style>

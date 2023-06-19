@@ -1,6 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
-:root{
-    --blue-igp : #0000AF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --blue-igp: #0000AF;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+.header {
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  background-color: #eee;
+}
+
+/*PANEL DE PUBLICACIONES*/
+.publicacionPanel {
+  background-color: #fff;
+  width: 18rem !important;
+  padding: 0px 15px 0px 0px;
+}
+
+/*PANEL WIDGETS*/
+.contentWidget {
+  flex: 1;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.rowTop {
+  --bs-gutter-x: 10px !important;
+}
+
+/*WIDGETS*/
+.widget1,
+.widget3 {}
+
+.widget2 {}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+/* DASHBOARD*/
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: inherit;
 }
 
 /*:root {

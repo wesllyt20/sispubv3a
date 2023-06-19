@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import dotenv from 'dotenv'
 
-// https://vitejs.dev/config/
+dotenv.config()
+
+const publicPath = process.env.VITE_PUBLIC_PATH? `/${process.env.VITE_PUBLIC_PATH}/` : '/'
+
 export default defineConfig({
   plugins: [vue()],
-})
+  base: publicPath,
+});
