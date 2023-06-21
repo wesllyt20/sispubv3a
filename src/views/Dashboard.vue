@@ -1,20 +1,19 @@
 <template>
   <div class="dashboard">
-    <header class="header">Header</header>
-    <div class="content">
-      <div class="publicacionPanel">Panel</div>
-      <div class="contentWidget">
+    <div id="contHeader">
+      <headerE></headerE>
+    </div>
+
+    <div id="content">
+      <div id="asPublish" class="publicacionPanel">Panel</div>
+
+      <div id="contentWidget">
 
         <div class="row rowTop">
           <div class="col-sm-3">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Parámetros Sísmicos</h5>
-
-
-
-
-
               </div>
             </div>
           </div>
@@ -76,12 +75,16 @@
   </div>
 </template>
 <script>
+import headerE from './toolbar/header.vue';
 export default {
-
+  name: "Dashboard",
   mounted() {
     console.log("->", import.meta.env.VITE_PUBLIC_PATH)
 
-  }
+  },
+  components: {
+    headerE,
+  },
 }
 </script>
 
