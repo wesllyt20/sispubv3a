@@ -1,11 +1,13 @@
 <template>
   <div class="dashboard">
     <div id="contHeader">
-      <headerE></headerE>
+      <my-header></my-header>
     </div>
 
     <div id="content">
-      <div id="asPublish" class="publicacionPanel">Panel</div>
+      <div id="asPublish" class="publicacionPanel">
+        <my-aside></my-aside>
+      </div>
 
       <div id="contentWidget">
 
@@ -75,15 +77,13 @@
   </div>
 </template>
 <script>
-import headerE from './toolbar/header.vue';
+import myHeader from './toolbar/myheader.vue';
+import myAside from './toolbar/myaside.vue';
 export default {
   name: "Dashboard",
-  mounted() {
-    console.log("->", import.meta.env.VITE_PUBLIC_PATH)
-
-  },
   components: {
-    headerE,
+    'my-header': myHeader,
+    'my-aside': myAside
   },
 }
 </script>

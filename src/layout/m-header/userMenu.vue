@@ -1,14 +1,14 @@
 <template>
-    <div class="d-flex align-items-center">
+    <div id="userMenu" class="d-flex align-items-center">
         <div class="d-flex flex-column">
             <div class="text-muteded ">
                 Efraín Fernández
             </div>
 
-            <div class="text-turned">Jefe Censis</div>
+            <div class="text-turned text-align-end">Jefe Censis</div>
         </div>
     </div>
-    <div class="d-flex align-items-center ms-1 ms-lg-3">
+    <div id="headerMenu" class="d-flex align-items-center mt-1 ms-lg-3">
         <div class="cursor-pointer symbol symbol-30px symbol-md-40px">
             <span class="svg-icon svg-icon-1">
                 <div id="img-container">
@@ -27,11 +27,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#userMenu {
+    margin: 10px 0px 0px 0px;
+}
+
+.text-turned {
+    margin-top: -5px;
+    text-align: end;
+}
+
 #img-container {
     box-sizing: border-box;
-    width: 42.03px;
-    height: 40px;
+    width: 44px;
+    height: 43px;
     background: #ffffff;
     border: 1px solid rgba(25, 32, 36, 0.6);
     border-radius: 6px;
@@ -41,4 +50,7 @@ export default {
     /* Centra horizontalmente el contenido */
     align-items: center;
 }
-</style>
+
+#headerMenu {
+    margin-right: 15px;
+}</style>

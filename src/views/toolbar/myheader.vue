@@ -1,18 +1,20 @@
 <template>
     <div id="contToolHeader">
         <tittleLogo></tittleLogo>
-        <notify></notify>
-        <userMenu></userMenu>
+        <div class="d-flex ">
+            <notify></notify>
+            <userMenu></userMenu>
+        </div>
     </div>
 </template>
 
 <script>
-import tittleLogo from '../../layout/header/tittleLogo.vue';
-import notify from '../../layout/header/notify.vue';
-import userMenu from '../../layout/header/userMenu.vue';
+import tittleLogo from '../../layout/m-header/tittleLogo.vue';
+import notify from '../../layout/m-header/notify.vue';
+import userMenu from '../../layout/m-header/userMenu.vue';
 
 export default {
-    name: "header",
+    name: "myHeader",
     mounted() {
         console.log("->", import.meta.env.VITE_PUBLIC_PATH)
 
@@ -28,5 +30,6 @@ export default {
 <style>
 #contToolHeader {
     display: flex;
+    justify-content: space-between;
 }
 </style>

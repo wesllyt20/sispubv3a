@@ -1,5 +1,5 @@
 <template>
-    <div id="notify-container">
+    <div id="notify-containerH" style="height: 44px;">
         <img src="media/icons/campana.png" />
         <div id="divmen" class="border border-vertical"></div>
         <span id="numb">0</span>
@@ -13,21 +13,18 @@ export default {
 }
 </script>
 
-<style>
-#notify-container {
+<style >
+#notify-containerH {
     box-sizing: border-box;
-
-    width: 88.01px;
-    height: 40px;
-
+    width: 88px;
+    margin: 21px 25px 0px 0px;
     background: #ffffff;
     border: 1px solid rgba(25, 32, 36, 0.6);
     border-radius: 6px;
     display: flex;
-    /* Establece el contenedor como flexbox */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
+
 }
 
 #divmen {
