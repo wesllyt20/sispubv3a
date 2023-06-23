@@ -1,28 +1,32 @@
 <template>
-    <button id="bPub" class="" type="button" :class="{ 'btn-custom': true }" @click="pubBtn">
-        Publicar evento
-    </button>
-
-    <div class="chMenu menu-section fs-8 px-3">
-        <div class="d-flex justify-content-between align-items-center">
-            <span id="evento" class="card-title mb-0">Evento</span>
-            <div class="form-check mb-2">
-                <input id="imp1" class="form-check-input mt-2" type="checkbox" v-model="isChecked1"
-                    v-on:change="updateCheckboxes(1)" />
-            </div>
+    <div class="d-flex flex-column" >
+        <div class="">
+            <button id="bPub" class="" type="button" :class="{ 'btn-custom': true }" @click="pubBtn">
+                Publicar evento
+            </button>
         </div>
-        <div class="block d-flex justify-content-between align-items-center">
-            <span id="simulacro" class="card-title mb-0">Simulacro</span>
-            <div class="form-check mb-2">
-                <input id="imp2" class="form-check-input mt-2" type="checkbox" v-model="isChecked2"
-                    v-on:change="updateCheckboxes(2)" />
+        <div class="divMen2 border border-vertical"></div>
+        <div class="chMenu menu-section fs-8 px-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <span id="evento" class="card-title mb-0">Evento</span>
+                <div class="form-check mb-2">
+                    <input id="imp1" class="form-check-input mt-2" type="checkbox" v-model="isChecked1"
+                        v-on:change="updateCheckboxes(1)" />
+                </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-between align-items-center">
-            <span id="simulacion" class="card-title mb-0">Simulación</span>
-            <div class="form-check mb-2">
-                <input id="imp3" class="form-check-input mt-2" type="checkbox" v-model="isChecked3"
-                    v-on:change="updateCheckboxes(3)" />
+            <div class="block d-flex justify-content-between align-items-center">
+                <span id="simulacro" class="card-title mb-0">Simulacro</span>
+                <div class="form-check mb-2">
+                    <input id="imp2" class="form-check-input mt-2" type="checkbox" v-model="isChecked2"
+                        v-on:change="updateCheckboxes(2)" />
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <span id="simulacion" class="card-title mb-0">Simulación</span>
+                <div class="form-check mb-2">
+                    <input id="imp3" class="form-check-input mt-2" type="checkbox" v-model="isChecked3"
+                        v-on:change="updateCheckboxes(3)" />
+                </div>
             </div>
         </div>
     </div>
@@ -158,5 +162,16 @@ export default {
 #simulacion {
     color: v-bind(evnt3);
     font-weight: v-bind(nigg3);
+}
+
+.divMen2 {
+    margin-top: 10px;
+    margin-left: 33px;
+    margin-right: 33px;
+
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #e5eaee !important;
+    line-height: 36px;
 }
 </style>
